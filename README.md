@@ -1,7 +1,6 @@
 ## 目录
-
 Vue
 ---
 
 * [less-全局配置](Vue/配置/less-全局配置.md)
-* [test](Vue/配置/README.md)
+* [vuex-全局配置](/Vue/配置/vuex-全局配置.md)
