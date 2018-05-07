@@ -171,7 +171,7 @@ const store = new Vuex.Store({
 }
 ```
 
-######介绍完毕开始配置
+###### 介绍完毕开始配置
 
 * 目录结构
 
@@ -225,7 +225,7 @@ export const getStore = () => globalStore;
 export default [setStore];
 ```
 
-######vuex的配置和之前的差不多 不过也有点区别
+###### vuex的配置和之前的差不多 不过也有点区别
 
 `mk1_actions`
 ```
@@ -300,7 +300,7 @@ export default function(store){
 export const ADD_COUNT = 'ADD_COUNT'
 ```
 
-######修改入口文件 main.js
+###### 修改入口文件 main.js
 
 ```
 import Vue from 'vue'
