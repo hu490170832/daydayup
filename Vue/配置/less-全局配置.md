@@ -19,6 +19,7 @@
   ```
 
 * 安装  `style-loader`
+
   ```
   npm install style-loader --save
   ```
@@ -32,8 +33,8 @@
   npm install sass-resources-loader --save-dev
   ```
 
-2. src\/assets\/style 下新建 `theme.less`
-3. 在 .\/build\/utils.js 的 `exports.cssLoaders` 中添加 `lessResourceLoader`
+* src\/assets\/style 下新建 `theme.less`
+* 在 .\/build\/utils.js 的 `exports.cssLoaders` 中添加 `lessResourceLoader`
   ```
   function lessResourceLoader() {
    var loaders = [
