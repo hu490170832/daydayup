@@ -11,9 +11,15 @@
 
 * [Proxy vs defineproperty](Vue/Proxy-defineproperty.md)
 
+
+
+## JavaScript
+
+* ES6
+ - [手册](/JavaScript/ES6/手册.md)
+  
 ## 随笔
 
 * [发布者订阅者模式](/随笔/发布者订阅者模式.md)
-
 
 
