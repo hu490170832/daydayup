@@ -15,7 +15,7 @@ npm install element-ui --save
 ![文件.png](https://upload-images.jianshu.io/upload_images/8677726-9ba6dbd5ffb57ac0.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)  
 **http.js**
 
-```
+```js
 import axios from 'axios'
 import qs from 'qs'
 import { Message,Loading } from 'element-ui';
@@ -107,7 +107,7 @@ export default httpServer;
 
 test.js \(测试用的api接口文件\)
 
-```
+```js
 const serviceModule = {
   getTestApi:{
     url: '/test/test1',
@@ -128,7 +128,7 @@ export default ApiSetting
 
 找到 config/index.js  `proxyTable`下添加以下代码
 
-```
+```js
 '/': {
         target: 'http://127.0.0.1:3000', //设置调用接口域名和端口号别忘了加http
         changeOrigin: true,
@@ -148,7 +148,7 @@ npm install express --save
 
 server下建立app.js文件
 
-```
+```js
 var express = require('express');
 var app = express();
 
@@ -172,14 +172,14 @@ var server = app.listen(3000, function () {
 
 1 引入接口文件
 
-```
+```js
 import http from '../api/http'
 import ApiSetting from '../api/test'
 ```
 
 2 使用
 
-```
+```js
 http(ApiSetting.getTestApi,{'abc':'def'}).then(res=>{
   console.log(res);
 },err =>{
@@ -194,8 +194,4 @@ http(ApiSetting.getTestApi2,{'abc':'def'}).then(res=>{
 ```
 
 **vue2.0+vueRouter+vuex+less+axios 完整项目配置地址** [https://github.com/gershonv/vue-project.git](https://github.com/gershonv/vue-project.git######安装)
-
-
-
-
 

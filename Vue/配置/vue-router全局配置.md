@@ -2,7 +2,7 @@
 
 默认安装 `vue-router` src/common/index.js 修改为
 
-```
+```js
 import Vue from 'vue'
 import Router from 'vue-router'
 
@@ -47,12 +47,11 @@ export default router;
 
 ---
 
-![文件模块示意.png](https://upload-images.jianshu.io/upload_images/8677726-1bf85aef27db7f0a.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)  
-
+![文件模块示意.png](https://upload-images.jianshu.io/upload_images/8677726-1bf85aef27db7f0a.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
 
 **1 src/common/router.js**
 
-```
+```js
 import VueRouter from 'vue-router'
 import routerInterceptor from '../common/interceptor/routerInterceptor'
 import moduleRouter1 from '../modules/module1/module1_router'
@@ -83,7 +82,7 @@ export default function () {
 **2 src/common/interceptor/routerInterceptor.js**  
 路由拦截器的js文件
 
-```
+```js
 export default function (router) {
   //路由拦截器
   router.beforeEach((to, from, next) => {
@@ -106,7 +105,7 @@ export default function (router) {
 **3 src/modules/modeule1/module1\_router.js**  
 模块下的路由文件 导出到 common/router.js
 
-```
+```js
 export default function (router) {
   router.addRoutes([
     {path:'/mm1',component: resolve => require(['./vue/mm1.vue'], resolve)},
