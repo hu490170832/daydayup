@@ -7,7 +7,7 @@
 * [vuex-全局配置](/Vue/配置/vuex-全局配置.md)
 * [axios-全局配置](/Vue/配置/axios-全局配置.md "axios-全局配置")
 
-* [Proxy vs defineproperty](/Vue/Proxy vs defineproperty.md)
+* [Proxy vs defineproperty](Vue/Proxy-defineproperty.md)
 
 
 
