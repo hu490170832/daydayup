@@ -10,6 +10,7 @@
 * ES6
 
   * [手册](/JavaScript/ES6/手册.md)
+  * [Proxy](/JavaScript/ES6/proxy.md)
 
 ## Vue
 

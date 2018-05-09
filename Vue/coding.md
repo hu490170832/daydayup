@@ -6,7 +6,7 @@
 <router-link to='/test' @click="test">测试click</router-link>
 ```
 
-`router-link`会阻止`click`事件，你可以试试只用`click`不用`native `,事件是不会触发的
+`router-link`会阻止`click`事件，你可以试试只用`click`不用`native`,事件是不会触发的
 
 > @click.native 主要是为组件绑定原生事件，类似 $el.addEventListener\(click,callback\);
 >
@@ -36,7 +36,7 @@
 </script>
 ```
 
- 引用button.vue组件
+引用button.vue组件
 
 ```js
 <template>
@@ -63,7 +63,7 @@
 </script>
 ```
 
-可以发现 **不加native的组件只执行自定义的事件 vClickHandler **
+可以发现  **不加native的组件只执行自定义的事件 vClickHandler**
 
-**加了native 的组件会执行自定义的事件 vClickHandler 和 click 方法 **
+**加了native 的组件会执行自定义的事件 vClickHandler 和 click 方法**
 
