@@ -65,7 +65,7 @@ console.log(pro.name);
 * target：得到的目标值
 * receiver
 
-**set属性 **set属性是值你要改变Proxy属性值时，进行的预先处理。它接收四个参数
+**set属性** set属性是值你要改变Proxy属性值时，进行的预先处理。它接收四个参数
 
 * target:目标值。
 * key：目标的Key值。
@@ -98,7 +98,7 @@ console.log(proxy.name);
 
 PS 预处理时要`return target[key]`
 
-**apply **
+**apply**
 
 apply的作用是调用内部的方法，它使用在方法体是一个匿名函数时。看下边的代码
 
