@@ -28,6 +28,7 @@
 
 * 随笔
 
+  * [关于组件](/Vue/组件.md)
   * [组件之间的通信](/Vue/组件之间的通信.md)
   * [发布者/订阅者模式之实现一个event bus](/Vue/实现一个event-bus.md)
   * [Proxy vs defineproperty](Vue/Proxy-defineproperty.md)
