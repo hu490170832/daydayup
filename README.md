@@ -42,7 +42,7 @@
 ## 随笔
 
 * [发布者订阅者模式](/随笔/发布者订阅者模式.md)
-* [fastclick ](/随笔/fastclick .md)
+* [fastclick](/随笔/fastclick .md)
 * [工具包](/JavaScript/随笔/util.md)
 * [速查](/JavaScript/随笔/速查.md)
 * [易混淆知识点](/随笔/易混淆知识点.md)
