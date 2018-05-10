@@ -67,3 +67,23 @@
 
 **加了native 的组件会执行自定义的事件 vClickHandler 和 click 方法**
 
+### keep-alive
+
+主要用于保留组件状态或避免重新渲染  
+首先看下没有加 keep-alive 的效果  
+![1.gif](https://upload-images.jianshu.io/upload_images/8677726-857dd3561235ce87.gif?imageMogr2/auto-orient/strip)  
+
+
+> 然后看看 加了keep-alive 的效果
+
+```html
+<keep-alive>
+   <router-view/>
+</keep-alive>
+```
+
+  
+![2.gif](https://upload-images.jianshu.io/upload_images/8677726-dee0c2e105930f9a.gif?imageMogr2/auto-orient/strip)
+
+可以发现之前在组件1的输入值还是存在的~~~
+
