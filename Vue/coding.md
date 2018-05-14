@@ -71,8 +71,7 @@
 
 主要用于保留组件状态或避免重新渲染  
 首先看下没有加 keep-alive 的效果  
-![1.gif](https://upload-images.jianshu.io/upload_images/8677726-857dd3561235ce87.gif?imageMogr2/auto-orient/strip)  
-
+![1.gif](https://upload-images.jianshu.io/upload_images/8677726-857dd3561235ce87.gif?imageMogr2/auto-orient/strip)
 
 > 然后看看 加了keep-alive 的效果
 
@@ -82,8 +81,45 @@
 </keep-alive>
 ```
 
-  
 ![2.gif](https://upload-images.jianshu.io/upload_images/8677726-dee0c2e105930f9a.gif?imageMogr2/auto-orient/strip)
 
 可以发现之前在组件1的输入值还是存在的~~~
+
+**值得注意的是 keep-alive 和生命周期~~**
+
+使用了 keep-alive 的组件 mounted 只会执行一次。当然可以使用 **activated 对数据进行更新**
+
+### Vue.set
+
+> 动态为data中定义的对象增加属性值时 会发现实现不了数据的双向绑定 （Vue 不允许动态添加根级响应式属性） 看
+
+```js
+<input v-model='obj.name' type='text'>
+
+mounted(){
+    this.obj.name = ''; //挂载时为obj添加name属性
+}
+data(){
+    return{
+        obj:{}
+    }
+}
+```
+
+解决办法 使用set方法 Vue.set\(app.$data, 'b', 2\)
+
+```js
+input v-model='obj.name' type='text'>
+
+mounted(){
+    this.$set(obj,'name','');
+}
+data(){
+    return{
+        obj:{}
+    }
+}
+```
+
+
 
