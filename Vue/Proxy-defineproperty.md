@@ -98,5 +98,7 @@ data.name = '渣渣辉';
 
 > 我们看到，虽然Vue运用了数据劫持，但是依然离不开**发布订阅**的模式就是因为我们不管在学习一些框架的原理还是一些流行库（例如Redux、Vuex）,基本上都离不开**发布订阅**模式,而_Event_模块则是此模式的经典实现,所以如果不熟悉**发布订阅**模式,建议先熟悉下
 
+文章转自 [https://juejin.im/post/5acd0c8a6fb9a028da7cdfaf](https://juejin.im/post/5acd0c8a6fb9a028da7cdfaf)
+
 
 
