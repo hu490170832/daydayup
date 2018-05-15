@@ -10,6 +10,7 @@
 * ES6
 
   * [手册](/JavaScript/ES6/手册.md)
+  * [Promise](/JavaScript/ES6/Promise.md)
   * [Proxy](/JavaScript/ES6/proxy.md)
   * [Reflect](/JavaScript/ES6/Reflect.md)
 
