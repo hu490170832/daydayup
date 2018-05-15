@@ -41,6 +41,7 @@
 
 * 基础
   * [http 模块](/node/basics/http.md)
+  * [fs](/node/basics/fs.md)
   * [npm 包管理](/node/basics/npm.md)
 
 ## 随笔
