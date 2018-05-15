@@ -28,7 +28,7 @@ var data = fs.readFile('./index.txt', 'utf-8', function(err,data){
 
 
 
-* **read **`fs.read(fd, buffer, offset, length, position, callback)`
+* **read** `fs.read(fd, buffer, offset, length, position, callback)`
 
 > 1. fd ：通过 fs.open\(\) 方法返回的文件描述符
 > 2. buffer ：数据写入的缓冲区
@@ -42,7 +42,7 @@ var data = fs.readFile('./index.txt', 'utf-8', function(err,data){
 
 ### 2） 写入文件
 
-* **writeFile writeFileSync **`fs.writeFile(path, data, [options], function(err){ });`
+* **writeFile writeFileSync** `fs.writeFile(path, data, [options], function(err){ });`
 
 > 1. `path`：文件路径
 > 2. `data`：要写入的数据
@@ -62,7 +62,7 @@ fs.writeFile('./message.txt','这是写入的数据',function(err){
 如果message文件不存在 则会创建message.txt  
 如果message文件存在 则写入的数据覆盖原本内容
 
-* **write writeSync **`fs.write(fd,buffer,offset,length,position,function(err,written,buffer) {})`
+* **write writeSync** `fs.write(fd,buffer,offset,length,position,function(err,written,buffer) {})`
 
 ```js
 var fs = require('fs')
@@ -82,7 +82,7 @@ fs.open('./message.txt','w', function(err,fd){
 
 在写入文件后，我们经常要关闭文件`fs.close(fd,[callback])`
 
-#### 2.1 用readFile **writeFile **实现复制图片
+#### 2.1 用readFile writeFile 实现复制图片
 
 ```js
 var fs = require('fs');
@@ -99,7 +99,7 @@ fs.readFile('./a.jpg', 'base64', function(err,data){
 
 ### 3）在文件中追加内容
 
-**appendFile appendFileSync **`fs.appendFile(path, data, options, callback)`
+**appendFile appendFileSync** `fs.appendFile(path, data, options, callback)`
 
 ```js
 var fs = require('fs');
@@ -114,7 +114,7 @@ fs.appendFile('./message.txt', '这是追加的数据', 'utf-8', function(err){
 
 ### 4）打开文件
 
-**open openSync **`fs.open(path, flags[, mode], callback) `
+**open openSync** `fs.open(path, flags[, mode], callback) `
 
 > 1. path ： 文件的路径。
 > 2. flags ：文件打开的行为
@@ -138,7 +138,7 @@ fs.open('message.txt', 'r+', function (err, fd) {
 
 ### 5）创建文件、目录
 
-**mkdir mkdirSync **`fs.mkdir(path[, mode], callback)`
+**mkdir mkdirSync** `fs.mkdir(path[, mode], callback)`
 
 ```js
 var fs = require("fs");
@@ -154,7 +154,7 @@ fs.mkdir("test",function(err){
 
 ### 6）读取目录
 
-**readdir readdirSync **`fs.readdir(path,function(err,files){})`
+**readdir readdirSync** `fs.readdir(path,function(err,files){})`
 
 ```js
 var fs = require('fs')
@@ -173,7 +173,7 @@ fs.readdir('./',function(err,files){
 
 ### 7）获取文件信息
 
-**stat **`fs.stat(path, callback)`
+**stat** `fs.stat(path, callback)`
 
 ```js
 var fs = require('fs');
@@ -193,7 +193,7 @@ fs.stat('message.txt',function(err,stats){
 
 ### 8）判断文件目录是否存在 
 
-**exists **`fs.exists(path, callback)`
+**exists** `fs.exists(path, callback)`
 
 ```js
 var fs = require('fs');
