@@ -1,3 +1,83 @@
+# 入门
+
+---
+
+## 1. 概述 {#概述}
+
+Promise 对象是 JavaScript 的异步操作解决方案，为异步操作提供统一接口。它起到代理作用（proxy），充当异步操作与回调函数之间的中介，使得异步操作具备同步操作的接口。Promise 可以让异步操作写起来，就像在写同步操作的流程，而不必一层层地嵌套回调函数。
+
+首先，Promise 是一个对象，也是一个构造函数。
+
+```js
+function f1(resolve, reject) {
+  // 异步代码...
+}
+
+var p1 = new Promise(f1);
+```
+
+上面代码中，`Promise`构造函数接受一个回调函数`f1`作为参数，`f1`里面是异步操作的代码。然后，返回的`p1`就是一个 Promise 实例。
+
+Promise 的设计思想是，所有异步任务都返回一个 Promise 实例。Promise 实例有一个`then`方法，用来指定下一步的回调函数。
+
+```js
+var p1 = new Promise(f1);
+p1.then(f2);
+```
+
+上面代码中，`f1`的异步操作执行完成，就会执行`f2 `传统的写法可能需要把`f2`作为回调函数传入`f1`，比如写成`f1(f2)`，异步操作完成后，在`f1`内部调用`f2`。Promise 使得`f1`和`f2`变成了链式写法。不仅改善了可读性，而且对于多层嵌套的回调函数尤其方便。
+
+## 2. Promise.prototype.then\(\) {#promise-对象的状态}
+
+```js
+var p1 = new Promise(function (resolve, reject) {
+  resolve('成功');
+});
+p1.then(console.log, console.error);
+// "成功"
+
+var p2 = new Promise(function (resolve, reject) {
+  reject(new Error('失败'));
+});
+p2.then(console.log, console.error);
+// Error: 失败
+```
+
+## 3. Promise 的实例 {#promise-的实例}
+
+#### 1）加载图片
+
+我们可以把图片的加载写成一个`Promise`对象。
+
+```js
+var preloadImage = function (path) {
+  return new Promise(function (resolve, reject) {
+    var image = new Image();
+    image.onload  = resolve;
+    image.onerror = reject;
+    image.src = path;
+  });
+};
+```
+
+## 4. **all的用法**
+
+Promise的all方法提供了并行执行异步操作的能力，并且在所有异步操作执行完后才执行回调。我们仍旧使用上面定义好的runAsync1、runAsync2、runAsync3这三个函数，看下面的例子：
+
+```js
+Promise
+.all([runAsync1(), runAsync2(), runAsync3()])
+.then(function(results){
+    console.log(results);
+});
+```
+
+用Promise.all来执行，all接收一个数组参数，里面的值最终都算返回Promise对象。这样，三个异步操作的并行执行的，等到它们都执行完后才会进到then里面。那么，三个异步操作返回的数据哪里去了呢？都在then里面呢，all会把所有异步操作的结果放进一个数组中传给then，就是上面的results。
+
+# 进阶
+
+---
+
 ## 1. promise语法
 
 Promise编程的核心思想是**如果数据就绪\(promised\)，那么\(then\)做点什么。**
