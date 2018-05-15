@@ -4,6 +4,8 @@
 
 * Css3
   * ad
+* 随笔
+  * [CSS黑魔法](/html&css/css/黑魔法.md)
 
 ## JavaScript
 
