@@ -37,11 +37,11 @@
 
 ### Justify-content
 
-**justify-content:space-between  **两端对齐，项目之间的间隔相等，即剩余空间等分成间隙
+**justify-content:space-between** 两端对齐，项目之间的间隔相等，即剩余空间等分成间隙
 
 ![](/assets/space-between.png)
 
-**justify-content:space-around ** 每个项目两侧的间隔相等，所以项目之间的间隔比项目与边缘的间隔大一倍。
+**justify-content:space-around** 每个项目两侧的间隔相等，所以项目之间的间隔比项目与边缘的间隔大一倍。
 
 ![](/assets/space-around.png)
 
