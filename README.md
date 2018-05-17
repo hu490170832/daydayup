@@ -22,9 +22,12 @@
   * [Proxy](/JavaScript/ES6/proxy.md)
   * [Reflect](/JavaScript/ES6/Reflect.md)
 
-* 面对对象
+* 系列
 
+  * [JavaScript 中的 this 用法](/JavaScript/随笔/this.md)
   * [理解对象](/JavaScript/OO/理解对象.md)
+
+
 
 * 随笔
 
