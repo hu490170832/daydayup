@@ -32,8 +32,6 @@ for (let i = 0; i < 5; i++) {
 
 执行结果是 每隔一秒输出 0 1 2 3 4
 
-
-
 ```js
 let temp = 1;
 for (let i = 0; i < 3; i++) {
@@ -50,7 +48,72 @@ for (let i = 0; i < 3; i++) {
 
 执行结果 依次输出  2 3 4  之后每隔一秒输出 4
 
+### 2）for循环异步后才执行下一步的方法
 
+```js
+(function iterator(i) {
+          if (i > 3) {
+            //这里就是异步执行后才执行的代码
+            console.log('end');
+            return;
+          }
+          axios.get('/async?count=' + i).then((res) => {
+            console.log(res.data.count);
+            iterator(i + 1);
+          });
+        })(1);
+```
+
+依次输出 1 2 3 end
+
+**async await 用法demo**
+
+```js
+function getDataSync() {
+
+  return axios.get('/async?count=' + 1).then((res) => {
+    console.log(res.data.count);
+    return res.data.count;
+  });
+
+}
+const getData = async () => {
+  await getDataSync();
+  console.log('end~~~~~~');
+};
+
+getData();
+```
+
+依次输出 1 end~~~~~
+
+**Promise**
+
+```js
+new Promise((resolve, reject) => {
+  axios.get('/async?count=' + 1).then((res) => {
+    resolve(res.data.count);
+  });
+}).then((data)=>{
+  console.log(data);
+  console.log('end');
+}); // 1 end
+```
+
+**Promise.all**
+
+```js
+Promise.all(
+  [1,2,3].map((i)=>{
+    return axios.get('/async?count=' + i).then((res) => res.data.count );
+  })
+).then((value)=>{
+  console.log(value);
+  console.log('end');
+})
+//  ["1", "2", "3"]
+//  end
+```
 
 
 
