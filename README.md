@@ -3,7 +3,7 @@
 ## HTML and CSS
 
 * Css3
-  * ad
+  * 
 * 随笔
   * [CSS黑魔法](/html&css/css/黑魔法.md)
 
@@ -13,12 +13,17 @@
 
   * [手册](/JavaScript/ES6/手册.md)
   * [Promise](/JavaScript/ES6/Promise.md)
+  * [async await](/JavaScript/ES6/async&await.md)
   * [Proxy](/JavaScript/ES6/proxy.md)
   * [Reflect](/JavaScript/ES6/Reflect.md)
 
 * 面对对象
 
   * [理解对象](/JavaScript/OO/理解对象.md)
+
+* 随笔
+
+  * [for循环与异步操作](/JavaScript/随笔/for循环与异步操作.md)
 
 ## Vue
 
@@ -41,7 +46,7 @@
 
 * 基础
   * [http 模块](/node/basics/http.md)
-  * [fs](/node/basics/fs.md)
+  * [fs 模块](/node/basics/fs.md)
   * [npm 包管理](/node/basics/npm.md)
 
 ## 随笔
