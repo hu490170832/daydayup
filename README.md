@@ -1,6 +1,6 @@
 ## **目录**
 
-:fire: [HTML and CSS](#html-and-css) :fire: [JavaScript](#javascript) :fire: [Vue.js](#vuejs) :fire:  [Node](#node)  :fire:   [随笔](#随笔) :fire:
+:fire: [HTML and CSS](#html-and-css) :fire: [JavaScript](#javascript) :fire: [Vue.js](#vuejs) :fire:  [Node](#node)  :fire:   [随笔](#随笔) :fire: [todoList](/随笔/备注.md) :fire:
 
 ---
 
@@ -35,8 +35,6 @@
 > > [for循环与异步操作](/JavaScript/随笔/for循环与异步操作.md)
 
 #### Vue.js
-
-[todoList](/随笔/备注.md)
 
 > ##### 配置
 >
