@@ -1,6 +1,6 @@
 ## **目录**
 
-:fire: [HTML and CSS](#html-and-css) :fire: [JavaScript](#javascript) :fire: [Vue.js](#vuejs) :fire:  [Node](#node)  :fire:   [随笔](#随笔) :fire: [todoList](/随笔/备注.md) :fire:
+:fire: [HTML and CSS](#html-and-css) :fire: [JavaScript](#javascript) :fire: [Vue.js](#vuejs) :fire:  [Node](#node)  :fire:   [随笔](#日常知识点) :fire: [todoList](随笔/todoList.md) :fire:
 
 ---
 
@@ -59,7 +59,7 @@
 > > [fs 模块](/node/basics/fs.md)  
 > > [npm 包管理](/node/basics/npm.md)
 
-#### 随笔
+#### 日常知识点
 
 * [git](/随笔/git.md)
 * [发布者订阅者模式](/随笔/发布者订阅者模式.md)
