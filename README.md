@@ -27,10 +27,9 @@
   * [JavaScript 中的 this 用法](/JavaScript/随笔/this.md)
   * [理解对象](/JavaScript/OO/理解对象.md)
 
-
-
 * 随笔
 
+  * [数组相关操作](/JavaScript/随笔/Array.md)
   * [for循环与异步操作](/JavaScript/随笔/for循环与异步操作.md)
 
 ## Vue
@@ -62,7 +61,7 @@
 * [发布者订阅者模式](/随笔/发布者订阅者模式.md)
 * [fastclick](/随笔/fastclick.md)
 * [工具包](/JavaScript/随笔/util.md)
-* [速查](/JavaScript/随笔/速查.md)
+* [开发技巧](/随笔/开发技巧.md)
 * [易混淆知识点](/随笔/易混淆知识点.md)
 
 
