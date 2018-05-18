@@ -73,6 +73,7 @@ str.split('b')   //["a", "c"]
 var arr1 = [1];
 var arr2 = [2];
 JSON.stringify(arr1) == JSON.stringify(arr2)    // false
+arr1.toString() == arr2.toString() //false
 ```
 
 上面的方法有个缺点就是 类型会被转换为字符串 比如 `SON.stringify(['1']) == JSON.stringify([1])` 为 true
