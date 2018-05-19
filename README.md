@@ -1,6 +1,6 @@
 ## **目录**
 
-:fire: [HTML and CSS](#html-and-css) :fire: [JavaScript](#javascript) :fire: [Vue.js](#vuejs) :fire:  [Node](#node)  :fire: [日常积累](#日常知识点)  :fire: [Git](#git) :fire: [todoList](随笔/todoList.md) :fire:
+:fire: [HTML and CSS](#html-and-css) :fire: [JavaScript](#javascript) :fire: [Vue.js](#vuejs) :fire:  [Node](#node)  :fire: [日常积累](#日常积累)  :fire: [Git](#git) :fire: [todoList](随笔/todoList.md) :fire:
 
 ---
 
@@ -74,6 +74,10 @@
 > ##### 版本控制
 >
 > > [版本回退](/git/版本控制/版本回退.md)
+> >
+> > [工作区和暂存区](/git/版本控制/工作区和暂存区.md)
+> >
+> > [文件修改的版本控制](/git/版本控制/文件修改管理.md)
 >
 > [git基础入门](/随笔/git.md)
 >
