@@ -338,5 +338,55 @@ git diff    #是工作区(work dict)和暂存区(stage)的比较
 git diff --cached    #是暂存区(stage)和分支(master)的比较
 ```
 
+### 5）管理修改
+
+先进行以下操作
+
+第一次修改 -&gt;`git add`-&gt; 第二次修改 -&gt;`git commit`
+
+```
+Git is a distributed version control system.
+Git is free software distributed under the GPL.
+Git has a mutable index called stage.
+Git tracks changes.
+```
+
+```
+git add readme.txt
+```
+
+```
+Git is a distributed version control system.
+Git is free software distributed under the GPL.
+Git has a mutable index called stage.
+Git tracks changes of files.
+```
+
+```
+git commit -m "git tracks changes"
+```
+
+git status 查看状态
+
+```js
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+    modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+**第二次的修改没有被提交**
+
+提交后，用`git diff HEAD -- readme.txt`命令可以查看工作区和版本库里面最新版本的区别：
+
+![](/assets/git-diff2.png)
+
+那怎么提交第二次修改呢？你可以继续`git add`再`git commit`，也可以别着急提交第一次修改，先`git add`第二次修改，再`git commit`，就相当于把两次修改合并后一块提交了。
+
 
 
