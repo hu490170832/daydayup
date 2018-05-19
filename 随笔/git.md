@@ -320,7 +320,7 @@ Git非常清楚地告诉我们，`readme.txt`被修改了，而`LICENSE`还从�
 
 现在，暂存区的状态就变成这样了：
 
-![](https://cdn.liaoxuefeng.com/cdn/files/attachments/001384907720458e56751df1c474485b697575073c40ae9000/0)
+![](/assets/after-add.jpg)
 
 所以，`git add`命令实际上就是把要提交的所有修改放到暂存区（Stage），然后，执行`git commit`就可以一次性把暂存区的所有修改提交到分支。
 
@@ -330,6 +330,7 @@ $ git commit -m "understand how stage works"
  2 files changed, 2 insertions(+)
  create mode 100644 LICENSE
 ```
+![](/assets/after-commit.jpg)
 
 批注
 
@@ -416,19 +417,20 @@ My stupid boss still prefers SVN.
 $ git add readme.txt
 ```
 撤销修改
-阅读: 684382
-自然，你是不会犯错的。不过现在是凌晨两点，你正在赶一份工作报告，你在readme.txt中添加了一行：
 
+自然，你是不会犯错的。不过现在是凌晨两点，你正在赶一份工作报告，你在readme.txt中添加了一行：
+```
 $ cat readme.txt
 Git is a distributed version control system.
 Git is free software distributed under the GPL.
 Git has a mutable index called stage.
 Git tracks changes of files.
 My stupid boss still prefers SVN.
+```
 在你准备提交前，一杯咖啡起了作用，你猛然发现了stupid boss可能会让你丢掉这个月的奖金！
 
 既然错误发现得很及时，就可以很容易地纠正它。你可以删掉最后一行，手动把文件恢复到上一个版本的状态。如果用git status查看一下：
-
+```js
 $ git status
 On branch master
 Changes not staged for commit:
@@ -438,10 +440,11 @@ Changes not staged for commit:
     modified:   readme.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
+```
 你可以发现，Git会告诉你，git checkout -- file可以丢弃工作区的修改：
 
-$ git checkout -- readme.txt
-命令git checkout -- readme.txt意思就是，把readme.txt文件在工作区的修改全部撤销，这里有两种情况：
+`$ git checkout -- readme.txt`
+命令`git checkout -- readme.txt`意思就是，把readme.txt文件在工作区的修改全部撤销，这里有两种情况：
 
 一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
 
@@ -450,17 +453,18 @@ $ git checkout -- readme.txt
 总之，就是让这个文件回到最近一次git commit或git add时的状态。
 
 现在，看看readme.txt的文件内容：
-
+```
 $ cat readme.txt
 Git is a distributed version control system.
 Git is free software distributed under the GPL.
 Git has a mutable index called stage.
 Git tracks changes of files.
+```
 文件内容果然复原了。
 
-git checkout -- file命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令，我们在后面的分支管理中会再次遇到git checkout命令。
+`git checkout -- file`命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令，我们在后面的分支管理中会再次遇到git checkout命令。
 
- 现在假定是凌晨3点，你不但写了一些胡话，还git add到暂存区了：
+现在假定是凌晨3点，你不但写了一些胡话，还git add到暂存区了：
 ```
 $ cat readme.txt
 Git is a distributed version control system.
