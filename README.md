@@ -19,6 +19,8 @@
 > #### ES6
 >
 > > [手册](/JavaScript/ES6/手册.md)  
+> > [Map和Set](/JavaScript/ES6/Map&Set.md)
+> > [iterable](/JavaScript/ES6/iterable.md)
 > > [Promise](/JavaScript/ES6/Promise.md)  
 > > [async await](/JavaScript/ES6/async&await.md)  
 > > [Proxy](/JavaScript/ES6/proxy.md)  
@@ -32,7 +34,7 @@
 > ##### 随笔
 >
 > > [数组相关操作](/JavaScript/随笔/Array.md)  
-> > [for循环与异步操作](/JavaScript/随笔/for循环与异步操作.md)
+> > [for循环与异步操作](/JavaScript/随笔/for循环与异步操作.md)  
 > > [undefined与null的区别](/JavaScript/随笔/undefined&null.md)
 
 #### Vue.js
