@@ -2,6 +2,8 @@
 
 * [概念](/webpack/概念.md)
 * [entry 入口起点](/webpack/entry.md)
+* [output 输出](/webpack/output.md)
+* [mode 模式](/webpack/mode.md)
 
 ---
 
