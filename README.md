@@ -19,8 +19,8 @@
 > #### ES6
 >
 > > [手册](/JavaScript/ES6/手册.md)  
-> > [Map和Set](/JavaScript/ES6/Map&Set.md)
-> > [iterable](/JavaScript/ES6/iterable.md)
+> > [Map和Set](/JavaScript/ES6/Map&Set.md)  
+> > [iterable](/JavaScript/ES6/iterable.md)  
 > > [Promise](/JavaScript/ES6/Promise.md)  
 > > [async await](/JavaScript/ES6/async&await.md)  
 > > [Proxy](/JavaScript/ES6/proxy.md)  
