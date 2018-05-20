@@ -1,5 +1,9 @@
 ## fs：操作文件系统
 
+:fire: [ 读取文件](#1）-读取文件) :fire: [ 写入文件](#2）-写入文件) :fire: [在文件中追加内容](#3）在文件中追加内容) :fire: [打开文件](#4）打开文件) :fire: [文件与目录](#5）创建文件、目录):fire:
+
+---
+
 ### 1） 读取文件
 
 * **readFile readFileSync**`fs.readFile(filename,[options],function(err,data){ })`
@@ -25,8 +29,6 @@ var data = fs.readFile('./index.txt', 'utf-8', function(err,data){
 ```
 
 运行结果 ：![](https://upload-images.jianshu.io/upload_images/8677726-f95609667ed6bc52.png?imageMogr2/auto-orient/strip|imageView2/2/w/327)
-
-
 
 * **read** `fs.read(fd, buffer, offset, length, position, callback)`
 
@@ -114,7 +116,7 @@ fs.appendFile('./message.txt', '这是追加的数据', 'utf-8', function(err){
 
 ### 4）打开文件
 
-**open openSync** `fs.open(path, flags[, mode], callback) `
+**open openSync** `fs.open(path, flags[, mode], callback)`
 
 > 1. path ： 文件的路径。
 > 2. flags ：文件打开的行为
@@ -134,7 +136,7 @@ fs.open('message.txt', 'r+', function (err, fd) {
 });
 ```
 
-运行结果：![](https://upload-images.jianshu.io/upload_images/8677726-472d454dbd35795d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/307)
+运行结果：![](https://upload-images.jianshu.io/upload_images/8677726-472d454dbd35795d.png?imageMogr2/auto-orient/strip|imageView2/2/w/307)
 
 ### 5）创建文件、目录
 
@@ -167,9 +169,9 @@ fs.readdir('./',function(err,files){
 })
 ```
 
-当前目录：![](https://upload-images.jianshu.io/upload_images/8677726-0d749fae48456bf0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/237)
+当前目录：![](https://upload-images.jianshu.io/upload_images/8677726-0d749fae48456bf0.png?imageMogr2/auto-orient/strip|imageView2/2/w/237)
 
-运行结果：![](https://upload-images.jianshu.io/upload_images/8677726-5a6cbebeaba5a3f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/563)
+运行结果：![](https://upload-images.jianshu.io/upload_images/8677726-5a6cbebeaba5a3f1.png?imageMogr2/auto-orient/strip|imageView2/2/w/563)
 
 ### 7）获取文件信息
 
@@ -189,9 +191,9 @@ fs.stat('message.txt',function(err,stats){
 });
 ```
 
-运行结果：![](https://upload-images.jianshu.io/upload_images/8677726-f4eaac06e81683c3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/369)
+运行结果：![](https://upload-images.jianshu.io/upload_images/8677726-f4eaac06e81683c3.png?imageMogr2/auto-orient/strip|imageView2/2/w/369)
 
-### 8）判断文件目录是否存在 
+### 8）判断文件目录是否存在
 
 **exists** `fs.exists(path, callback)`
 
