@@ -19,6 +19,7 @@
 > * [webpack](http://webpack.wuhaolin.cn/ "webpack")
 > * [大神博客](http://www.cnblogs.com/pssp/)
 > * [廖雪峰的网站](https://www.liaoxuefeng.com/)
+> * [印记中文](https://docschina.org/)
 
 ![](http://ww3.sinaimg.cn/mw690/5eef6257gw1f7tfl42kwmg20aa0a7x6p.gif)
 
