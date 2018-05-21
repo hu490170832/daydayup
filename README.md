@@ -2,7 +2,7 @@
 
 :fire: [HTML and CSS](#html-and-css) :fire: [JavaScript](#javascript) :fire: [Vue.js](#vuejs) :fire:  [Node](#node)  :fire: [日常积累](#日常积累)  :fire: [Git](#git) :fire: [webpack 4+](/webpack/README.md) :fire: [todoList](随笔/todoList.md) :fire:
 
-:fire: [koa2](/node/koa2/README.md) :fire: 
+:fire: [koa2](/node/koa2/README.md) :fire:
 
 ---
 
@@ -35,6 +35,7 @@
 >
 > ##### 随笔
 >
+> > [regexp 正则表达式](/JavaScript/随笔/regexp.md)
 > > [数组相关操作](/JavaScript/随笔/Array.md)  
 > > [for循环与异步操作](/JavaScript/随笔/for循环与异步操作.md)  
 > > [undefined与null的区别](/JavaScript/随笔/undefined&null.md)
