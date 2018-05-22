@@ -121,5 +121,24 @@ data(){
 }
 ```
 
+### dependencies与devDependencies之间的区别
+
+#### –save-dev 和 –save 的区别
+
+我们在使用npm install 安装模块或插件的时候，有两种命令把他们写入到 package.json 文件里面去，比如：
+
+* –save-dev 安装的 插件，被写入到 devDependencies 对象里面去
+
+* –save 安装的 插件 ，被写入到 dependencies 对象里面去
+
+#### package.json 文件里面的 devDependencies 和 dependencies 对象有什么区别呢？
+
+* devDependencies 里面的插件只用于开发环境，不用于生产环境
+* dependencies 是需要发布到生产环境的。
+
+#### _比如_：
+
+你用angularjs框架开发一个程序，开发阶段需要用到gulp来构建你的开发和本地运行环境。所以angularjs一定要放到dependencies里，因为以后程序到生产环境也要用。gulp则是你用来压缩代码，打包等需要的工具，程序实际运行的时候并不需要，所以放到dev里就ok了。
+
 
 
