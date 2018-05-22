@@ -10,7 +10,8 @@
 
 > ##### CSS
 >
-> > [flex布局](/html&css/css/flex布局.md "flex 布局")
+> > [flex布局](/html&css/css/flex布局.md "flex 布局")  
+> > [移动端布局适配基础](/html&css/others/移动端适配基础.md)
 >
 > ##### 随笔
 >
