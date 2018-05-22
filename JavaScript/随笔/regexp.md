@@ -122,5 +122,43 @@ ab\d. //使用预定义类
 'a2*34v8'.replace(/\w(?=\d)/g,'X') //"X2*X4X8"
 ```
 
+---
+
+**实战**
+
+富文本的移动端适配 
+
+```js
+//要求 width 属性置为空，style 中的 width 为100%
+var str = '<div style="width: 800px; height: 100px;"><img width="500" height="200" /></div>'
+```
+
+```js
+// 去掉img里的width属性
+str = str.replace(/([a-z]+)="[\s\S]+?"/ig,function($1,$2,$3){
+    console.log($1);   //$1是匹配到的 也是要替换的字符串
+    // style="width: 800px; height: 100px;"
+    // width="500"
+    // height="200"
+    
+    console.log($2);
+    // style
+    // width
+    // height
+
+    if($2== 'width'){
+        return '';
+    }
+    return $1;
+})
+==> "<div style="width: 800px; height: 100px;"><img  height="200" /></div>"
+```
+
+```js
+// style 里的width属性置为100%
+str.replace(/width:\s\d{3,4}px;/g,'width: 100%');
+"<div style="width: 100% height: 100px;"><img  height="200" /></div>"
+```
+
 
 
