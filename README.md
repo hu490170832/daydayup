@@ -32,6 +32,7 @@
 > ##### 系列
 >
 > > [理解对象](/JavaScript/OO/理解对象.md)  
+> > [event loop](/JavaScript/OO/eventLoop.md)
 > > [JavaScript 中的 this 用法](/JavaScript/随笔/this.md)
 >
 > ##### 随笔
@@ -53,7 +54,8 @@
 > ##### 随笔
 >
 > > [关于组件](/Vue/组件.md)  
-> > [组件之间的通信](/Vue/组件之间的通信.md)  
+> > [组件之间的通信](/Vue/组件之间的通信.md) 
+> > [深入响应式原理](Vue/进阶/深入响应式原理.md)  
 > > [发布者/订阅者模式之实现一个event bus](/Vue/实现一个event-bus.md)  
 > > [Proxy vs defineproperty](Vue/Proxy-defineproperty.md)  
 > > [开发中遇到的问题](/Vue/coding.md)
