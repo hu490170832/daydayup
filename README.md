@@ -29,9 +29,8 @@
 > > [Proxy](/JavaScript/ES6/proxy.md)  
 > > [Reflect](/JavaScript/ES6/Reflect.md)
 >
-> ##### 系列
+> ##### 进阶
 >
-> > [理解对象](/JavaScript/OO/理解对象.md)  
 > > [event loop](/JavaScript/OO/eventLoop.md)  
 > > [JavaScript 中的 this 用法](/JavaScript/随笔/this.md)
 >
