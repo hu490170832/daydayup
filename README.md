@@ -31,7 +31,7 @@
 >
 > ##### 进阶
 >
-> > [event loop](/JavaScript/OO/eventLoop.md)  
+> > [event loop](JavaScript/进阶/eventLoop.md)  
 > > [JavaScript 中的 this 用法](/JavaScript/随笔/this.md)
 >
 > ##### 随笔
