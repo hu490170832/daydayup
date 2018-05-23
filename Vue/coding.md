@@ -89,37 +89,5 @@
 
 使用了 keep-alive 的组件 mounted 只会执行一次。当然可以使用 **activated 对数据进行更新**
 
-### Vue.set
-
-> 动态为data中定义的对象增加属性值时 会发现实现不了数据的双向绑定 （Vue 不允许动态添加根级响应式属性） 看
-
-```js
-<input v-model='obj.name' type='text'>
-
-mounted(){
-    this.obj.name = ''; //挂载时为obj添加name属性
-}
-data(){
-    return{
-        obj:{}
-    }
-}
-```
-
-解决办法 使用set方法 Vue.set\(app.$data, 'b', 2\)
-
-```js
-input v-model='obj.name' type='text'>
-
-mounted(){
-    this.$set(obj,'name','');
-}
-data(){
-    return{
-        obj:{}
-    }
-}
-```
-
 
 
