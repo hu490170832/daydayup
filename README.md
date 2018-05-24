@@ -39,7 +39,8 @@
 > > [regexp 正则表达式](/JavaScript/随笔/regexp.md)  
 > > [数组相关操作](/JavaScript/随笔/Array.md)  
 > > [for循环与异步操作](/JavaScript/随笔/for循环与异步操作.md)  
-> > [undefined与null的区别](/JavaScript/随笔/undefined&null.md)
+> > [undefined与null的区别](/JavaScript/随笔/undefined&null.md)  
+> > [CommonJS、requirejs、ES6 ](/JavaScript/进阶/模块加载.md)
 
 #### Vue.js
 
