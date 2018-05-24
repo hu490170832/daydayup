@@ -1,4 +1,4 @@
-# 深入理解 Vue computed 属性 {#articleTitle}
+# 深入理解 Vue computed 属性
 
 先看官网的demo
 
@@ -31,7 +31,7 @@ Original message: "Hello"
 
 Computed reversed message: "olleH"
 
-## Situation {#articleHeader0}
+## Situation
 
 Vue 里的 Computed 属性非常频繁的被使用到，但并不是很清楚它的实现原理。比如：**计算属性如何与属性建立依赖关系**？**属性发生变化又如何通知到计算属性重新计算**？
 
@@ -39,11 +39,11 @@ Vue 里的 Computed 属性非常频繁的被使用到，但并不是很清楚它
 
 因此接下来的任务就是从 Vue 源码一步步分析 Computed 的实现原理。
 
-## Task {#articleHeader1}
+## Task
 
 分析依赖收集实现原理，分析动态计算实现原理。
 
-## Action {#articleHeader2}
+## Action
 
 `src/observer/index.js`data 属性初始化 getter setter：
 
@@ -207,7 +207,7 @@ export function popTarget () {
 }
 ```
 
-## Result {#articleHeader3}
+## Result
 
 总结一下依赖收集、动态计算的流程：
 

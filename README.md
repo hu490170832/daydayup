@@ -56,7 +56,7 @@
 > > [关于组件](/Vue/组件.md)  
 > > [组件之间的通信](/Vue/组件之间的通信.md)  
 > > [深入响应式原理](Vue/进阶/深入响应式原理.md)  
-> > [深入理解 computed属性](/Vue/进阶/深入理解computed.md)
+> > [深入理解 computed属性](/Vue/进阶/深入理解computed.md)  
 > > [发布者/订阅者模式之实现一个event bus](/Vue/实现一个event-bus.md)  
 > > [Proxy vs defineproperty](Vue/Proxy-defineproperty.md)  
 > > [开发中遇到的问题](/Vue/coding.md)
