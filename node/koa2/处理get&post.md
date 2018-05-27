@@ -1,4 +1,6 @@
-**demo**
+## koa2 入坑（1）之处理get/post请求
+
+**先来个小demo**
 
 ```js
 const Koa = require('koa');
@@ -151,7 +153,5 @@ app.listen(3000, () => {
 });
 ```
 
-![](https://upload-images.jianshu.io/upload_images/8677726-1be97590aa376dc1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/697)
-
-
+![](https://upload-images.jianshu.io/upload_images/8677726-1be97590aa376dc1.png?imageMogr2/auto-orient/strip|imageView2/2/w/697)
 
