@@ -4,9 +4,9 @@
 
 * [ ] [JavaScript/ES6/Reflect.md](/JavaScript/ES6/Reflect.md)
 
-* [ ] [Vue/Proxy-defineproperty.md](/Vue/Proxy-defineproperty.md)
+* [ ] [Vue/Proxy-defineproperty.md](/vue/Proxy-defineproperty.md)
 
-* [ ] [Vue/实现一个event-bus.md](/Vue/实现一个event-bus.md)
+* [ ] [Vue/实现一个event-bus.md](/vue/实现一个event-bus.md)
 
 * [ ] [理解对象](#)
 
