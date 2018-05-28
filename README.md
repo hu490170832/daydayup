@@ -2,7 +2,7 @@
 
 :fire: [HTML and CSS](#html-and-css) :fire: [JavaScript](#javascript)  :fire:  [Node](#node)  :fire: [日常积累](#日常积累)  :fire: [Git](/git/readme.md) :fire: [webpack 4x](/webpack/README.md) :fire: [todoList](随笔/todoList.md) :fire:
 
-:fire: v[ue](#vuejs) :fire: [nuxt](/Vue/nuxt/README.md) :fire: [react](/react/README.md) :fire: [koa2](/node/koa2/README.md) :fire: [mongodb](/mongodb/README.md) :fire:
+:fire:[vue](#vuejs) :fire: [nuxt](/Vue/nuxt/README.md) :fire: [react](/react/README.md) :fire: [koa2](/node/koa2/README.md) :fire: [mongodb](/mongodb/README.md) :fire:
 
 ---
 
@@ -46,19 +46,19 @@
 
 > ##### 配置
 >
-> > [less-全局配置](vue/配置/less-全局配置.md)
-> > [vueRouter-全局配置](/vue/配置/vue-router全局配置.md)
-> > [vuex-全局配置](/vue/配置/vuex-全局配置.md)
-> > [axios-全局配置](/vue/配置/axios-全局配置.md "axios-全局配置")
+> > [less-全局配置](vue/配置/less-全局配置.md)  
+> > [vueRouter-全局配置](/vue/配置/vue-router全局配置.md)  
+> > [vuex-全局配置](/vue/配置/vuex-全局配置.md)  
+> > [axios-全局配置](/vue/配置/axios-全局配置.md "axios-全局配置")  
 >
 > ##### 随笔
 >
-> > [关于组件](/vue/组件.md)
-> > [组件之间的通信](/vue/组件之间的通信.md)
-> > [深入响应式原理](vue/进阶/深入响应式原理.md)
-> > [深入理解 computed属性](/vue/进阶/深入理解computed.md)
-> > [发布者/订阅者模式之实现一个event bus](/vue/实现一个event-bus.md)
-> > [Proxy vs defineproperty](vue/Proxy-defineproperty.md)
+> > [关于组件](/vue/组件.md)  
+> > [组件之间的通信](/vue/组件之间的通信.md)  
+> > [深入响应式原理](vue/进阶/深入响应式原理.md)  
+> > [深入理解 computed属性](/vue/进阶/深入理解computed.md)  
+> > [发布者/订阅者模式之实现一个event bus](/vue/实现一个event-bus.md)  
+> > [Proxy vs defineproperty](vue/Proxy-defineproperty.md)  
 > > [开发中遇到的问题](/vue/coding.md)
 
 #### Node
