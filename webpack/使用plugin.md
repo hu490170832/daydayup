@@ -47,17 +47,17 @@ if(!BROWSER_SUPPORTS_HTML5) require("html5shiv");
 
 社区中关于 DefinePlugin 使用得最多的方式是定义环境变量，例如`PRODUCTION = true`或者`__DEV__ = true`等。部分类库在开发环境时依赖这样的环境变量来给予开发者更多的开发调试反馈，例如`react`等。
 
-> 建议使用 `process.env.NODE_ENV: ... `的方式来定义` process.env.NODE_ENV`，而不是使用` process: { env: { NODE_ENV: ... } }` 的方式，因为这样会覆盖掉`process` 这个对象，可能会对其他代码造成影响。
+> 建议使用 `process.env.NODE_ENV: ...`的方式来定义`process.env.NODE_ENV`，而不是使用`process: { env: { NODE_ENV: ... } }` 的方式，因为这样会覆盖掉`process` 这个对象，可能会对其他代码造成影响。
 
 ## copy-webpack-plugin
 
- 这个插件看名字就知道它有什么作用，没错，就是用来复制文件的。
+这个插件看名字就知道它有什么作用，没错，就是用来复制文件的。
 
 ```
 npm install copy-webpack-plugin -D
 ```
 
- 我们一般会把开发的所有源码和资源文件放在 src/ 目录下，构建的时候产出一个 build/ 目录，通常会直接拿 build 中的所有文件来发布。有些文件没经过 webpack 处理，但是我们希望它们也能出现在 build 目录下，这时就可以使用 `CopyWebpackPlugin` 来处理了。
+我们一般会把开发的所有源码和资源文件放在 src/ 目录下，构建的时候产出一个 build/ 目录，通常会直接拿 build 中的所有文件来发布。有些文件没经过 webpack 处理，但是我们希望它们也能出现在 build 目录下，这时就可以使用 `CopyWebpackPlugin` 来处理了。
 
 我们来看下如何配置这个插件：
 
@@ -122,7 +122,7 @@ plugins: [
 
 `plugins`字段添加插件实例之外，还需要调整 loader 对应的配置。
 
- 在这里要强调的是，在 webpack 中，loader 和 plugin 的区分是很清楚的，针对文件模块转换要做的使用 loader，而其他干涉构建内容的可以使用 plugin。 `ExtractTextWebpackPlugin` 既提供了 plugin，也提供了 extract 方法来获取对应需要的 loader
+在这里要强调的是，在 webpack 中，loader 和 plugin 的区分是很清楚的，针对文件模块转换要做的使用 loader，而其他干涉构建内容的可以使用 plugin。 `ExtractTextWebpackPlugin` 既提供了 plugin，也提供了 extract 方法来获取对应需要的 loader
 
 ## ProvidePlugin
 
@@ -166,13 +166,15 @@ module.exports = {
 
 IgnorePlugin 配置的参数有两个，第一个是匹配引入模块路径的正则表达式，第二个是匹配模块的对应上下文，即所在目录名。
 
- 小结 本小节介绍了几个相对常见的 webpack plugin 的使用： 
+## 小结 
+
+本小节介绍了几个相对常见的 webpack plugin 的使用：
 
 * DefinePlugin 
 * copy-webpack-plugin 
 * extract-text-webpack-plugin 
 * ProvidePlugin
-*  IgnorePlugin 
+* IgnorePlugin 
 
 更多其他组件的使用就请有兴趣的同学自行摸索了：[plugins in awesome-webpack](https://link.juejin.im/?target=https%3A%2F%2Fgithub.com%2Fwebpack-contrib%2Fawesome-webpack%23webpack-plugins)。
 
