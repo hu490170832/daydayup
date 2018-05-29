@@ -156,9 +156,9 @@ rules: [
 
 ## loader 应用顺序
 
- 前面提到，一个匹配规则中可以配置使用多个 loader，即一个模块文件可以经过多个 loader 的转换处理，执行顺序是从最后配置的 loader 开始，一步步往前。例如，对于上面的 less 规则配置，一个 style.less 文件会途径 less-loader、css-loader、style-loader 处理，成为一个可以打包的模块。
+前面提到，一个匹配规则中可以配置使用多个 loader，即一个模块文件可以经过多个 loader 的转换处理，执行顺序是从最后配置的 loader 开始，一步步往前。例如，对于上面的 less 规则配置，一个 style.less 文件会途径 less-loader、css-loader、style-loader 处理，成为一个可以打包的模块。
 
- loader 的应用顺序在配置多个 loader 一起工作时很重要，通常会使用在 CSS 配置上，除了 `style-loader` 和 `css-loader`，你可能还要配置 less-loader 然后再加个 postcss 的 autoprefixer 等。
+loader 的应用顺序在配置多个 loader 一起工作时很重要，通常会使用在 CSS 配置上，除了 `style-loader` 和 `css-loader`，你可能还要配置 less-loader 然后再加个 postcss 的 autoprefixer 等。
 
 上述从后到前的顺序是在同一个 rule 中进行的，那如果多个 rule 匹配了同一个模块文件，loader 的应用顺序又是怎样的呢？看一份这样的配置：
 
@@ -202,7 +202,7 @@ rules: [
 
 在 webpack 中，我们需要使用的 loader 是在`module.rules`下配置的，webpack 配置中的 module 用于控制如何处理项目中不同类型的模块。
 
- 除了 `module.rules`字段用于配置 `loader` 之外，还有一个 `module.noParse` 字段，可以用于配置哪些模块文件的内容不需要进行解析。对于一些不需要解析依赖（即无依赖） 的第三方大型类库等，可以通过这个字段来配置，以提高整体的构建速度。
+除了 `module.rules`字段用于配置 `loader` 之外，还有一个 `module.noParse` 字段，可以用于配置哪些模块文件的内容不需要进行解析。对于一些不需要解析依赖（即无依赖） 的第三方大型类库等，可以通过这个字段来配置，以提高整体的构建速度。
 
 > 使用`noParse`进行忽略的模块文件中不能使用`import`、`require`、`define`等导入机制。
 
@@ -224,7 +224,9 @@ module.exports = {
 
 ## 小结
 
- webpack 的 loader 相关配置都在 `module.rules` 字段下，我们需要通过 `test`、`include`、`exclude` 等配置好应用 loader 的条件规则，然后使用 use 来指定需要用到的 loader，配置应用的 loader 时还需要注意一下 loader 的执行顺序。
+webpack 的 loader 相关配置都在 `module.rules` 字段下，我们需要通过 `test`、`include`、`exclude` 等配置好应用 loader 的条件规则，然后使用 use 来指定需要用到的 loader，配置应用的 loader 时还需要注意一下 loader 的执行顺序。
 
 除此之外，webpack 4.x 版本新增了模块类型的概念，相当于 webpack 内置一个更加底层的文件类型处理，暂时只有 JS 相关的支持，后续会再添加 HTML 和 CSS 等类型。
+
+demo [webpack/3-6/webpack.config.js](/webpack/3-6/webpack.config.js)
 

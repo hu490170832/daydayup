@@ -43,11 +43,11 @@ npm run start
 
 在 webpack 的配置中，可以通过`devServer`字段来配置 webpack-dev-server，如端口设置、启动 gzip 压缩等，这里简单讲解几个常用的配置。
 
-`public`字段用于指定静态服务的域名，默认是 http://localhost:8080/ ，当你使用 Nginx 来做反向代理时，应该就需要使用该配置来指定 Nginx 配置使用的服务域名。
+`public`字段用于指定静态服务的域名，默认是 [http://localhost:8080/](http://localhost:8080/) ，当你使用 Nginx 来做反向代理时，应该就需要使用该配置来指定 Nginx 配置使用的服务域名。
 
 `port`字段用于指定静态服务的端口，如上，默认是 8080，通常情况下都不需要改动。
 
-`publicPath`字段用于指定构建好的静态文件在浏览器中用什么路径去访问，默认是`/`，例如，对于一个构建好的文件`bundle.js`，完整的访问路径是`http://localhost:8080/bundle.js`，如果你配置了`publicPath: 'assets/'`，那么上述`bundle.js`的完整访问路径就是`http://localhost:8080/assets/bundle.js`。可以使用整个 URL 来作为`publicPath`的值，如`publicPath: 'http://localhost:8080/assets/'`。**如果你使用了 HMR，那么要设置`publicPath`就必须使用完整的 URL**。
+`publicPath`字段用于指定构建好的静态文件在浏览器中用什么路径去访问，默认是`/`，例如，对于一个构建好的文件`bundle.js`，完整的访问路径是`http://localhost:8080/bundle.js`，如果你配置了`publicPath: 'assets/'`，那么上述`bundle.js`的完整访问路径就是`http://localhost:8080/assets/bundle.js`。可以使用整个 URL 来作为`publicPath`的值，如`publicPath: 'http://localhost:8080/assets/'`。**如果你使用了 HMR，那么要设置**`publicPath`**就必须使用完整的 URL**。
 
 > 建议将`devServer.publicPath`和`output.publicPath`的值保持一致。
 
@@ -90,7 +90,7 @@ before(app){
 
 `after`在 webpack-dev-server 静态资源中间件处理之后，比较少用到，可以用于打印日志或者做一些额外处理。
 
- webpack-dev-server 的配置项比较多，这里只列举了一些日常比较有用的，更多的请参考官方文档[webpack-dev-server](https://link.juejin.im/?target=https%3A%2F%2Fdoc.webpack-china.org%2Fconfiguration%2Fdev-server%2F)。
+webpack-dev-server 的配置项比较多，这里只列举了一些日常比较有用的，更多的请参考官方文档[webpack-dev-server](https://link.juejin.im/?target=https%3A%2F%2Fdoc.webpack-china.org%2Fconfiguration%2Fdev-server%2F)。
 
 ## webpack-dev-middleware
 
@@ -144,7 +144,7 @@ node app.js # 使用刚才创建的 app.js 文件
 
 ## 实现一个简单的 mock 服务
 
- 在前端的日常开发工作中，我们本地需要的不仅仅是提供静态内容访问的服务，还需要模拟后端 API 数据来做一些应用测试工作，这个时候我们需要一个 mock 数据的服务，而 `webpack-dev-server` 的 before 或 proxy 配置，又或者是 `webpack-dev-middleware` 结合 Express，都可以帮助我们来实现简单的 mock 服务
+在前端的日常开发工作中，我们本地需要的不仅仅是提供静态内容访问的服务，还需要模拟后端 API 数据来做一些应用测试工作，这个时候我们需要一个 mock 数据的服务，而 `webpack-dev-server` 的 before 或 proxy 配置，又或者是 `webpack-dev-middleware` 结合 Express，都可以帮助我们来实现简单的 mock 服务
 
 我们最主要的需求是当浏览器请求某一个特定的路径时（如 /some/path ），可以访问我们想要的数据内容。
 
@@ -182,7 +182,7 @@ before(app) {
 
 ## 小结
 
- 本小节介绍了 webpack-dev-server 的基础使用及其更多的一些配置选项，如何使用 webpack-dev-middleware 来将 webpack 的开发环境集成到现有的 Node 服务中去，以及如何在 webpack-dev-server 和 webpack-dev-middleware 的基础上实现简单的 mock 服务。
+本小节介绍了 webpack-dev-server 的基础使用及其更多的一些配置选项，如何使用 webpack-dev-middleware 来将 webpack 的开发环境集成到现有的 Node 服务中去，以及如何在 webpack-dev-server 和 webpack-dev-middleware 的基础上实现简单的 mock 服务。
 
-
+demo [webpack/3-6/webpack.config.js](/webpack/3-6/webpack.config.js)
 

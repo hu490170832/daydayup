@@ -166,7 +166,7 @@ module.exports = {
 
 IgnorePlugin 配置的参数有两个，第一个是匹配引入模块路径的正则表达式，第二个是匹配模块的对应上下文，即所在目录名。
 
-## 小结 
+## 小结
 
 本小节介绍了几个相对常见的 webpack plugin 的使用：
 
@@ -177,4 +177,6 @@ IgnorePlugin 配置的参数有两个，第一个是匹配引入模块路径的�
 * IgnorePlugin 
 
 更多其他组件的使用就请有兴趣的同学自行摸索了：[plugins in awesome-webpack](https://link.juejin.im/?target=https%3A%2F%2Fgithub.com%2Fwebpack-contrib%2Fawesome-webpack%23webpack-plugins)。
+
+demo [webpack/3-6/webpack.config.js](/webpack/3-6/webpack.config.js)
 
