@@ -7,7 +7,7 @@
 5. :point\_right: [使用plugin](/webpack/使用plugin.md)
 6. :point\_right: [更好地使用 webpack-dev-server](/webpack/更好地使用webpack-dev-server.md)
 7. :point\_right: [开发和生产环境的构建配置差异](/webpack/开发和生产环境的构建配置差异.md)
-8. 9. 10. 11. 12. 13. 14. 15. 16.   
-
+8. :point\_right: [用HMR 提高开发效率](/webpack/用HMR 提高开发效率.md)
+9. 
 
 
