@@ -10,7 +10,8 @@
 8. :point\_right: [用HMR 提高开发效率](/webpack/用HMR提高开发效率.md)
 9. :point\_right: [资源优化-优化图片加载与压缩代码](/webpack/优化图片加载与压缩代码.md)
 10. :point\_right: [资源优化-分离代码文件](/webpack/分离代码文件.md)
-11. :point\_right: [资源优化-进一步控制JS 大小](/webpack/进一步控制JS 大小.md)
+11. :point\_right: [资源优化-进一步控制JS 大小](/webpack/进一步控制JS大小.md)
+12. :point\_right: [提升 webpack 的构建速度](/webpack/提升webpack的构建速度.md)
 
 
 
