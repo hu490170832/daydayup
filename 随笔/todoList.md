@@ -23,3 +23,9 @@
 
 ![](http://ww3.sinaimg.cn/mw690/5eef6257gw1f7tfl42kwmg20aa0a7x6p.gif)
 
+```
+--registry=https://registry.npm.taobao.org
+```
+
+
+
