@@ -1,4 +1,4 @@
-# mongo shell
+# mongoDB shell
 
 ## 数据库操作
 
@@ -33,7 +33,7 @@ db.COLLECTION_NAME.save(document)
 
 ### 查询文档
 
-**`find()`**
+`find()` 基础使用
 
 ```js
 db.COLLECTION_NAME.find() // 查询集合中所有记录
@@ -59,6 +59,19 @@ db.user.find('age':{$gt:17}，$or:[{name:'gershon'},{name:'Bob'}]) //WHERE age >
 // $type 操作符 【基于BSON类型来查询集合中匹配的数据类型，并返回结果。】
 1 Double | 2 String | 3 Object | 4 Array | 8 Boolean | 9 Date | 10 Null | 14 Symbol
 db.user.find({"name":{$type:2}})  //==> 查询 user 集合中 name 为 String 类型的文档
+```
+
+`find()` 映射和限制记录
+
+* MongoDB 中限制字段的显示，可以利用 0 或 1 来设置字段列表。1 用于显示字段，0 用于隐藏字段。
+* MongoDB 中想要显示或者跳过指定的文档条数，可以利用 limit\(\) 方法和 skip\(\) 方法
+
+```js
+db.user.find() //会显示user集合的所有记录包括 '_id' 我们不想他显示 ==>
+    --db.user.find({},{name:1, '_id':0}) // user 集合中查找的记录 不显示_id字段
+    
+db.user.find().limit(2) // 限制返回两条记录
+db.user.find().limit(2).skip(1) //查找的记录跳过首条数据
 ```
 
 ### 更新文档
