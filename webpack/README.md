@@ -13,5 +13,11 @@
 11. :point\_right: [资源优化-进一步控制JS 大小](/webpack/进一步控制JS大小.md)
 12. :point\_right: [提升 webpack 的构建速度](/webpack/提升webpack的构建速度.md)
 
+---
 
+[vue-cli-webpack-analysis](https://github.com/gershonv/vue-cli-webpack-analysis)
+
+[webpack学习网站](https://www.webpackjs.com/configuration/)
+
+[webpack.config.js](/webpack/base/webpack.config.js)
 
