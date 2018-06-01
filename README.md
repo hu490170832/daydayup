@@ -62,10 +62,11 @@
 
 ## Node
 
-* [http 模块](#)
-* [fs 模块](#)
-* [stream 模块](#)
-* [npm 包管理](#)
+* [http 模块](/node/basics/http.md)
+* [fs 模块](/node/basics/fs.md)
+* [stream 模块](/node/basics/stream.md)
+* [npm 包管理](/node/basics/npm.md)
+* [path](/node/basics/path.md)
 
 ## 日常积累
 
