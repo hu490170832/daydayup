@@ -2,6 +2,10 @@
 
 速查 -  [dbShell ](/mongodb/base/dbShell.md)
 
+　　 -  [findShell](/mongodb/base/findShell.md)
+
+　　-  
+
 ---
 
 * [概念与使用](/mongodb/base/概念与使用.md)
