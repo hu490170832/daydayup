@@ -1,8 +1,8 @@
 # **目录**
 
-:fire: [HTML and CSS](/html&css/README.md) :fire: [JavaScript](/JavaScript/README.md)  :fire:  [Node](/node/README.md)  :fire: [日常积累](#日常积累)  :fire: [Git](/git/readme.md) :fire: [webpack 4x](/webpack) :fire: [todoList](随笔/todoList.md) :fire:
+:fire: [HTML and CSS](/html&css/README.md) :fire: [JavaScript](/JavaScript/README.md)  :fire:  [Node](/node/README.md) :fire: [Git](/git/readme.md) :fire: [webpack 4x](/webpack/README.md) :fire: [学习资源](/todoList&resource.md) :fire:
 
-:fire:[vue](#vuejs) :fire: [nuxt](/vue/nuxt) :fire: [react](/react) :fire: [koa2](/node/koa2) :fire: [mongodb](/mongodb) :fire:
+:fire:[vue](/vue/README.md) :fire: [nuxt](/vue/nuxt) :fire: [react](/react/README.md) :fire: [koa2](/node/koa2) :fire: [mongodb](/mongodb/README.md) :fire:
 
 ---
 
