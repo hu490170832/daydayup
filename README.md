@@ -43,6 +43,7 @@
 * [vueRouter-全局配置](/vue/配置/vue-router全局配置.md)
 * [vuex-全局配置](/vue/配置/vuex-全局配置.md)
 * [axios-全局配置](/vue/配置/axios-全局配置.md "axios-全局配置")
+
 **基础**
 * [关于组件](/vue/组件.md)
 * [组件之间的通信](/vue/base/组件之间的通信.md)
@@ -72,6 +73,6 @@
 --registry=https://registry.npm.taobao.org //淘宝源地址
 
 ```
-
+[skills and utils](/skills&utils.md)
 
 
