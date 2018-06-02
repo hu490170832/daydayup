@@ -1,6 +1,6 @@
 # **目录**
 
-:fire: [HTML and CSS](#html-and-css) :fire: [JavaScript](#javascript)  :fire:  [Node](#node)  :fire: [日常积累](#日常积累)  :fire: [Git](/git/readme.md) :fire: [webpack 4x](/webpack) :fire: [todoList](随笔/todoList.md) :fire:
+:fire: [HTML and CSS](/html&css/README.md) :fire: [JavaScript](/JavaScript/README.md)  :fire:  [Node](/node/README.md)  :fire: [日常积累](#日常积累)  :fire: [Git](/git/readme.md) :fire: [webpack 4x](/webpack) :fire: [todoList](随笔/todoList.md) :fire:
 
 :fire:[vue](#vuejs) :fire: [nuxt](/vue/nuxt) :fire: [react](/react) :fire: [koa2](/node/koa2) :fire: [mongodb](/mongodb) :fire:
 
@@ -75,6 +75,10 @@
 * [工具包](/JavaScript/随笔/util.md)
 * [开发技巧](/随笔/开发技巧.md)
 * [易混淆知识点](/随笔/易混淆知识点.md)
+
+```
+--registry=https://registry.npm.taobao.org
+```
 
 
 

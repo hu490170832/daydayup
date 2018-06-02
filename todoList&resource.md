@@ -10,9 +10,7 @@
 
 * [ ] [理解对象](#)
 
-* [ ] Node Koa webpack
-
-### 学习资源
+## 学习资源
 
 > * [阮一峰的博客](http://www.ruanyifeng.com/blog/javascript/)
 > * [掘金网](https://juejin.im/ "掘金")
@@ -22,10 +20,6 @@
 > * [印记中文](https://docschina.org/)
 
 ![](http://ww3.sinaimg.cn/mw690/5eef6257gw1f7tfl42kwmg20aa0a7x6p.gif)
-
-```
---registry=https://registry.npm.taobao.org
-```
 
 
 

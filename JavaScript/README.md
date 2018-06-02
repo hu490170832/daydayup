@@ -13,9 +13,12 @@
 
 ## Array
 
-* [reduce](/JavaScript/base/Array/reduce.md)
+* [reduce 方法](/JavaScript/base/Array/reduce.md)
 * [合并数组 / 数组的转化 / 判断数组是否一样](/JavaScript/base/Array/合并数组-数组的转化-判断数组是否一样.md)
 * 
+
+## String
+* [slice substr substring 的区别](/JavaScript/base/String/字符串截取.md)
 
 ## 其他
 * [正则表达式](/JavaScript/其他/regexp.md)
