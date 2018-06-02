@@ -6,22 +6,9 @@
 
 ---
 
-## HTML and CSS
-
-#### CSS
-
-* [flex布局](#)
-* [CSS黑魔法](#)
-
-#### 其他
-
-* [移动端布局适配基础](/html&css/others/移动端适配基础.md)
-
 ## JavaScript
-
-#### ES6
-
-* [手册](#)
+**ES6**
+* [手册](/JavaScript/ES6/手册.md)
 * [Map和Set](/JavaScript/ES6/Map&Set.md)
 * [iterable](/JavaScript/ES6/iterable.md)
 * [Promise](/JavaScript/ES6/Promise.md)
@@ -29,36 +16,47 @@
 * [Proxy](/JavaScript/ES6/proxy.md)
 * [Reflect](/JavaScript/ES6/Reflect.md)
 
-#### 进阶
 
-* [event loop](#)
-* [JavaScript 中的 this 用法](/JavaScript/随笔/this.md)
+**Array**
 
-#### 其他
+* [reduce 方法](/JavaScript/base/Array/reduce.md)
+* [合并数组 / 数组的转化 / 判断数组是否一样](/JavaScript/base/Array/合并数组-数组的转化-判断数组是否一样.md)
 
-* [regexp 正则表达式](#)
-* [数组相关操作](/JavaScript/随笔/Array.md)
-* [for循环与异步操作](/JavaScript/随笔/for循环与异步操作.md)
-* [undefined与null的区别](/JavaScript/随笔/undefined&null.md)
-* [CommonJS、requirejs、ES6 ](/JavaScript/进阶/模块加载.md)
+**String**
+* [slice substr substring 的区别](/JavaScript/base/String/字符串截取.md)
+
+**其他**
+* [正则表达式](/JavaScript/其他/regexp.md)
+* [for循环与异步操作](/JavaScript/其他/for循环与异步操作.md)
+* [undefined 和 null 的区别](/JavaScript/其他/undefined&null.md)
+
+**底层**
+* [eventLoop](/JavaScript/底层/eventLoop.md)
+* [javascript 中的 this](/JavaScript/底层/this.md)
+
 
 ## Vue.js
 
-#### 配置
+**配置**
 
 * [less-全局配置](#)
 * [vueRouter-全局配置](/vue/配置/vue-router全局配置.md)
 * [vuex-全局配置](/vue/配置/vuex-全局配置.md)
 * [axios-全局配置](/vue/配置/axios-全局配置.md "axios-全局配置")
-
-#### 进阶
-
+**基础**
 * [关于组件](/vue/组件.md)
-* [组件之间的通信](/vue/组件之间的通信.md)
+* [组件之间的通信](/vue/base/组件之间的通信.md)
+
+
+**进阶**
 * [深入响应式原理](/vue/进阶/深入响应式原理.md)
 * [深入理解 computed属性](/vue/进阶/深入理解computed.md)
+
+
+**其他**
 * [发布者/订阅者模式之实现一个event bus](/vue/实现一个event-bus.md)
-* [Proxy vs defineproperty](/vue/Proxy-defineproperty.md)
+* [Proxy vs defineproperty](/vue/其他/Proxy-defineproperty.md)
+
 
 ## Node
 
@@ -68,16 +66,11 @@
 * [npm 包管理](/node/basics/npm.md)
 * [path](/node/basics/path.md)
 
-## 日常积累
-
-* [发布者订阅者模式](/随笔/发布者订阅者模式.md)
-* [fastclick](/随笔/fastclick.md)
-* [工具包](/JavaScript/随笔/util.md)
-* [开发技巧](/随笔/开发技巧.md)
-* [易混淆知识点](/随笔/易混淆知识点.md)
+---
 
 ```
---registry=https://registry.npm.taobao.org
+--registry=https://registry.npm.taobao.org //淘宝源地址
+
 ```
 
 
