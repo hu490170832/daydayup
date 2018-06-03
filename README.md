@@ -1,7 +1,7 @@
 # **目录**
 
 :fire: [html and css](/html&css/README.md) :fire: [JavaScript](/JavaScript/README.md) :fire: [vue.js](/vue/README.md) :fire: [node](/node/README.md) :fire: [nuxt.js](/vue/nuxt) :fire: [react.js](/react/README.md) :fire: [koa2](/node/koa2) :fire: [mongodb](/mongodb/README.md) :fire:  
-:fire: [Git](/git/readme.md) :fire: [webpack 4x](/webpack/README.md) :fire: [学习资源](/todoList&resource.md) :fire: [skills](/skills&utils.md) :fire:
+:fire: [Git](/git/readme.md) :fire: [webpack 4x](/webpack/README.md) :fire: [学习资源](/todoList&resource.md) :fire: [开发技机巧/工具包](/skills&utils.md) :fire:
 
 ---
 
@@ -22,7 +22,7 @@
 > > [reduce 方法](/JavaScript/base/Array/reduce.md)  
 > > [合并数组 / 数组的转化 / 判断数组是否一样](/JavaScript/base/Array/合并数组-数组的转化-判断数组是否一样.md)
 >
-> ** 其他 **
+> **其他**
 >
 > > [正则表达式](/JavaScript/其他/regexp.md)  
 > > [for循环与异步操作](/JavaScript/其他/for循环与异步操作.md)  
@@ -37,6 +37,7 @@
 
 > **配置**
 >
+> > 备注：以下配置仅供参考，接下来会学习 [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin) 的配置，搭建项目  
 > > [less-全局配置](/vue/配置/less-全局配置.md)  
 > > [vueRouter-全局配置](/vue/配置/vue-router全局配置.md)  
 > > [vuex-全局配置](/vue/配置/vuex-全局配置.md)  
@@ -65,7 +66,6 @@
 * [npm 包管理](/node/basics/npm.md)
 * [path](/node/basics/path.md)  
 * [module.exports 和 exports 的区别](/node/others/module.exports&exports.md)
-
 
 ---
 
