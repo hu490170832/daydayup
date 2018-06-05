@@ -1,7 +1,7 @@
 # **目录**
 
 :fire: [html and css](/html&css/README.md) :fire: [JavaScript](/JavaScript/README.md) :fire: [vue.js](/vue/README.md) :fire: [node](/node/README.md) :fire: [nuxt.js](/vue/nuxt) :fire: [react.js](/react/README.md) :fire: [koa2](/node/koa2) :fire: [mongodb](/mongodb/README.md) :fire:  
-:fire: [Git](/git/readme.md) :fire: [webpack 4x](/webpack/README.md) :fire: [学习资源](/todoList&resource.md) :fire: [开发技机巧/工具包](/skills&utils.md) :fire:
+:fire: [Git](/git/readme.md) :fire: [webpack 4x](/webpack/README.md) :fire: [学习资源](/todoList&resource.md) :fire: [开发技巧/工具包](/skills&utils.md) :fire:
 
 ---
 
@@ -52,6 +52,7 @@
 >
 > > [深入响应式原理](/vue/进阶/深入响应式原理.md)  
 > > [深入理解 computed属性](/vue/进阶/深入理解computed.md)
+> > [diff算法 <-- 为什么 v-for 要绑定key](/vue/进阶/diff算法.md)
 >
 > **其他**
 >
