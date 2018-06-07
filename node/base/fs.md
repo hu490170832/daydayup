@@ -7,9 +7,13 @@
 * [**fs.readFile 读取文件**](#fsreadfile)
 * [**fs.readdir 读取目录**](#fsreaddir)
 * [**fs.rename 重命名**](#fsrename)
+  * [rename 剪切文件](#剪切文件)
 * [**fs.rmdir 删除目录**](#fsrmdir)
 * [**fs.unlink 删除文件**](#fsunlink)
-  * [rename 剪切文件](#剪切文件)
+* fs.createReadStream
+  * [readStream](#readstream)
+  * [writeStream](#writestream)
+  * [pipe](#pipe)
 
 ## fs.stat
 
@@ -150,6 +154,80 @@ fs.unlink('t.txt',function(err){
     }
     console.log('删除文件成功');
 })
+```
+
+## readStream
+
+```js
+const fs = require('fs')
+
+// 流的方式读取文件
+let readStream = fs.createReadStream('t.txt');
+
+let str = ''; // 保存数据
+let count = 0;
+readStream.on('data', function (chunk) {
+        str += chunk;
+        count++;
+    }
+);
+
+// 读取完成
+readStream.on('end', function (chunk) {
+        console.log('count: ' + count);
+        console.log(str);
+    }
+);
+
+// 读取失败
+readStream.on('error', function (err) {
+        console.log(err);
+    }
+);
+```
+
+## writeStream
+
+```js
+const fs = require('fs');
+
+let data = '我是数据库获得的数据，我要保存起来';
+
+// 创建一个写入的流，写入到文件 t.txt 中
+let writeStream = fs.createWriteStream('t.txt');
+
+for (let i = 0; i < 100; i++) {
+    writeStream.write(data, 'utf-8');
+}
+
+// 标记写入完成
+writeStream.end();
+
+writeStream.on('finish', function () {
+    console.log('写入完成');
+});
+
+writeStream.on('error', function () {
+    console.log('写入失败');
+});
+```
+
+## Pipe
+
+```js
+const fs = require('fs')
+
+// 创建可读流
+let readStream = fs.createReadStream('t.txt');
+
+// 创建可写流
+let writeStream = fs.createWriteStream('z.txt');
+
+// 管道读写操作
+// 读取 t.txt 写入 z.txt
+readStream.pipe(writeStream);
+
+console.log('程序执行完毕');
 ```
 
 
