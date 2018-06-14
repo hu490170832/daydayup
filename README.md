@@ -28,6 +28,10 @@
 > > [for循环与异步操作](/JavaScript/其他/for循环与异步操作.md)  
 > > [undefined 和 null 的区别](/JavaScript/其他/undefined&null.md)
 >
+> **面对对象**
+>
+> > [理解对象](/JavaScript/base/OO/理解对象.md)
+>
 > **底层**
 >
 > > [eventLoop](/JavaScript/底层/eventLoop.md)  
@@ -46,6 +50,7 @@
 > **基础**
 >
 > > [关于组件](/vue/base/关于组件.md)  
+> > [v-model 深入理解 - 封装组件](/vue/base/v-model.md)  
 > > [组件之间的通信](/vue/base/组件之间的通信.md)
 >
 > **进阶**
