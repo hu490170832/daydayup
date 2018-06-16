@@ -7,35 +7,42 @@
 
 ## JavaScript
 
-> **ES6**
->
-> > [手册](/JavaScript/ES6/手册.md)  
-> > [Map和Set](/JavaScript/ES6/Map&Set.md)  
-> > [iterable](/JavaScript/ES6/iterable.md)  
-> > [Promise](/JavaScript/ES6/Promise.md)  
-> > [async await](/JavaScript/ES6/async&await.md)  
-> > [Proxy](/JavaScript/ES6/proxy.md)  
-> > [Reflect](/JavaScript/ES6/Reflect.md)
->
-> **Array**
->
-> > [reduce 方法](/JavaScript/base/Array/reduce.md)  
-> > [合并数组 / 数组的转化 / 判断数组是否一样](/JavaScript/base/Array/合并数组-数组的转化-判断数组是否一样.md)
->
-> **其他**
->
-> > [正则表达式](/JavaScript/其他/regexp.md)  
-> > [for循环与异步操作](/JavaScript/其他/for循环与异步操作.md)  
-> > [undefined 和 null 的区别](/JavaScript/其他/undefined&null.md)
->
-> **面对对象**
->
-> > [理解对象](/JavaScript/base/OO/理解对象.md)
->
-> **底层**
->
-> > [eventLoop](/JavaScript/底层/eventLoop.md)  
-> > [javascript 中的 this](/JavaScript/底层/this.md)
+### ES6
+
+* [手册](/JavaScript/ES6/手册.md)
+* [Map和Set](/JavaScript/ES6/Map&Set.md)
+* [iterable](/JavaScript/ES6/iterable.md)
+* [Promise](/JavaScript/ES6/Promise.md)
+* [async await](/JavaScript/ES6/async&await.md)
+* [Proxy](/JavaScript/ES6/proxy.md)
+* [Reflect](/JavaScript/ES6/Reflect.md)
+
+### Array
+
+* [reduce 方法](/JavaScript/base/Array/reduce.md)
+* [合并数组 / 数组的转化 / 判断数组是否一样](/JavaScript/base/Array/合并数组-数组的转化-判断数组是否一样.md)
+
+### String
+
+* [slice substr substring 的区别](/JavaScript/base/String/字符串截取.md)
+
+### 面对对象
+
+* [理解对象](/JavaScript/base/OO/理解对象.md)
+* [创建对象](/JavaScript/base/OO/创建对象.md)
+  * [工厂模式](/JavaScript/base/OO/创建对象.md#创建对象的模式) =&gt; [构造函数模式](/JavaScript/base/OO/创建对象.md#构造函数模式) =&gt; [原型模式](/JavaScript/base/OO/创建对象.md#原型模式) =&gt; [组合使用构造函数模式和原型模式](/JavaScript/base/OO/创建对象.md#组合使用构造函数模式和原型模式)...
+  * [理解原型](/JavaScript/base/OO/理解原型.md)
+
+### 其他
+
+* [正则表达式](/JavaScript/其他/regexp.md)
+* [for循环与异步操作](/JavaScript/其他/for循环与异步操作.md)
+* [undefined 和 null 的区别](/JavaScript/其他/undefined&null.md)
+
+### 底层
+
+* [eventLoop](/JavaScript/底层/eventLoop.md)  
+* [javascript 中的 this](/JavaScript/底层/this.md)
 
 ## Vue.js
 
