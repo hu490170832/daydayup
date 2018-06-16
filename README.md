@@ -31,7 +31,9 @@
 * [理解对象](/JavaScript/base/OO/理解对象.md)
 * [创建对象](/JavaScript/base/OO/创建对象.md)
   * [工厂模式](/JavaScript/base/OO/创建对象.md#创建对象的模式) =&gt; [构造函数模式](/JavaScript/base/OO/创建对象.md#构造函数模式) =&gt; [原型模式](/JavaScript/base/OO/创建对象.md#原型模式) =&gt; [组合使用构造函数模式和原型模式](/JavaScript/base/OO/创建对象.md#组合使用构造函数模式和原型模式)...
-  * [理解原型](/JavaScript/base/OO/理解原型.md)
+* [继承](/JavaScript/base/OO/继承.md)
+
+  * [原型链](/JavaScript/base/OO/继承.md#原型链) =&gt; [借用构造函数](/JavaScript/base/OO/继承.md#借用构造函数) =&gt;  [组合继承](/JavaScript/base/OO/继承.md#组合继承) =&gt; [寄生组合式继承](/JavaScript/base/OO/继承.md#寄生组合式继承)
 
 ### 其他
 
@@ -71,6 +73,18 @@
 > > [发布者/订阅者模式之实现一个event bus](vue/其他/实现一个event-bus.md)  
 > > [Proxy vs defineproperty](/vue/其他/Proxy-defineproperty.md)
 
+## HTML and CSS
+
+### CSS
+
+* [flex布局](/html&css/css/flex布局.md)
+* [CSS黑魔法](/html&css/css/黑魔法.md)
+
+### 其他
+
+* [移动端布局适配基础](/html&css/others/移动端适配基础.md)
+* [fastclick](/html&css/others/fastclick.md)
+
 ## Node
 
 * [http url](/node/base/http&url.md)
@@ -80,7 +94,6 @@
 * [path](/node/basics/path.md)  
 * [module.exports 和 exports 的区别](/node/others/module.exports&exports.md)
 
-* 
 ---
 
 ```
