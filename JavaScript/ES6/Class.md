@@ -1,5 +1,20 @@
 # Class
 
+* [简介](#简介)
+* [constructor 方法](#constructor-方法)
+* [类的实例对象](#类的实例对象)
+* [Class 表达式](#class-表达式)
+* 不存在变量提升
+* [私有方法和私有属性](#私有方法和私有属性)
+* [this 的指向](#this-的指向)
+  * 类的方法内部如果含有this，它默认指向类的实例
+* [Class 的取值函数（getter）和存值函数（setter）](#class-的取值函数-（getter）和存值函数)
+* [Class 的静态方法](#class-的静态方法)
+  * 在方法名前加 **static **关键字，就表示不会被实例继承
+* [Class 的静态方法和实例属性](#class-的静态属性和实例属性)
+  * [类的实例属性](#类的实例属性)
+  * [类的静态属性](#类的静态属性) -  **static** 关键字
+
 ## 简介
 
 JavaScript 语言中，生成实例对象的传统方法是通过构造函数。下面是一个例子。
@@ -362,6 +377,235 @@ export default class myClass{
 上面代码中，`bar`和`snaf`都是`Symbol`值，导致第三方无法获取到它们，因此达到了私有方法和私有属性的效果。
 
 ## this 的指向
+
+类的方法内部如果含有`this`，它默认指向类的实例。但是，必须非常小心，一旦单独使用该方法，很可能报错。
+
+```js
+class Logger {
+  printName(name = 'there') {
+    this.print(`Hello ${name}`);
+  }
+
+  print(text) {
+    console.log(text);
+  }
+}
+
+const logger = new Logger();
+const { printName } = logger;
+printName(); // TypeError: Cannot read property 'print' of undefined
+```
+
+上面代码中，`printName`方法中的`this`，默认指向`Logger`类的实例。但是，如果将这个方法提取出来单独使用，`this`会指向该方法运行时所在的环境，因为找不到`print`方法而导致报错。
+
+一个比较简单的解决方法是，在构造方法中绑定`this`，这样就不会找不到`print`方法了。
+
+```js
+class Logger {
+  constructor() {
+    this.printName = this.printName.bind(this);
+  }
+
+  // ...
+}
+```
+
+另一种解决方法是使用箭头函数。
+
+```js
+class Logger {
+  constructor() {
+    this.printName = (name = 'there') => {
+      this.print(`Hello ${name}`);
+    };
+  }
+
+  // ...
+}
+```
+
+还有一种解决方法是使用`Proxy`，获取方法的时候，自动绑定`this`。
+
+```js
+function selfish (target) {
+  const cache = new WeakMap();
+  const handler = {
+    get (target, key) {
+      const value = Reflect.get(target, key);
+      if (typeof value !== 'function') {
+        return value;
+      }
+      if (!cache.has(value)) {
+        cache.set(value, value.bind(target));
+      }
+      return cache.get(value);
+    }
+  };
+  const proxy = new Proxy(target, handler);
+  return proxy;
+}
+
+const logger = selfish(new Logger());
+```
+
+## Class 的取值函数 （getter）和存值函数
+
+与 ES5 一样，在“类”的内部可以使用`get`和`set`关键字，对某个属性设置存值函数和取值函数，拦截该属性的存取行为。
+
+```js
+class MyClass {
+  constructor() {
+    // ...
+  }
+  get prop() {
+    return 'getter';
+  }
+  set prop(value) {
+    console.log('setter: '+value);
+  }
+}
+
+let inst = new MyClass();
+
+inst.prop = 123; // setter: 123
+
+inst.prop // 'getter
+```
+
+上面代码中，`prop`属性有对应的存值函数和取值函数，因此赋值和读取行为都被自定义了。
+
+存值函数和取值函数是设置在属性的 Descriptor 对象上的。
+
+## Class 的静态方法
+
+类相当于实例的原型，所有在类中定义的方法，都会被实例继承。如果在一个方法前，加上`static`关键字，就表示该方法不会被实例继承，而是直接通过类来调用，这就称为“静态方法”。
+
+```js
+class Foo {
+  static classMethod() {
+    return 'hello';
+  }
+}
+
+Foo.classMethod() // 'hello'
+
+var foo = new Foo();
+foo.classMethod()
+// TypeError: foo.classMethod is not a function
+```
+
+注意，如果静态方法包`this`关键字，这个`this`指的是类，而不是实例。
+
+```js
+class Foo {
+  static bar () {
+    this.baz();
+  }
+  static baz () {
+    console.log('hello');
+  }
+  baz () {
+    console.log('world');
+  }
+}
+
+Foo.bar() // hello
+```
+
+上面代码中，静态方法`bar`调用了`this.baz`，这里的`this`指的是`Foo`类，而不是`Foo`的实例，等同于调用`Foo.baz`。另外，从这个例子还可以看出，静态方法可以与非静态方法重名。
+
+父类的静态方法，可以被子类继承。
+
+```js
+class Foo {
+  static classMethod() {
+    return 'hello';
+  }
+}
+
+class Bar extends Foo {
+}
+
+Bar.classMethod() // 'hello'
+```
+
+上面代码中，父类`Foo`有一个静态方法，子类`Bar`可以调用这个方法。
+
+静态方法也是可以从`super`对象上调用的。
+
+```js
+class Foo {
+  static classMethod() {
+    return 'hello';
+  }
+}
+
+class Bar extends Foo {
+  static classMethod() {
+    return super.classMethod() + ', too';
+  }
+}
+
+Bar.classMethod() // "hello, too"
+```
+
+## Class 的静态属性和实例属性
+
+静态属性指的是 Class 本身的属性，即`Class.propName`，而不是定义在实例对象（`this`）上的属性。
+
+```js
+class Foo {
+}
+
+Foo.prop = 1;
+Foo.prop // 1
+```
+
+上面的写法为`Foo`类定义了一个静态属性`prop`。
+
+目前，只有这种写法可行，因为 ES6 明确规定，Class 内部只有静态方法，没有静态属性。
+
+```js
+// 以下两种写法都无效
+class Foo {
+  // 写法一
+  prop: 2
+
+  // 写法二
+  static prop: 2
+}
+
+Foo.prop // undefined
+```
+
+#### 类的实例属性
+
+类的实例属性可以用等式，写入类的定义之中。
+
+```js
+class MyClass {
+  myProp = 42;
+
+  constructor() {
+    console.log(this.myProp); // 42
+  }
+}
+```
+
+#### 类的静态属性
+
+类的静态属性只要在上面的实例属性写法前面，加上`static`关键字就可以了。
+
+```js
+class MyClass {
+  static myStaticProp = 42;
+
+  constructor() {
+    console.log(MyClass.myStaticProp); // 42
+  }
+}
+var p = new MyClass(); // p 中实例属性没有 myStaticProp 
+```
 
 
 
