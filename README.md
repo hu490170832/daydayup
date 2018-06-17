@@ -35,6 +35,8 @@
 
   * [原型链](/JavaScript/base/OO/继承.md#原型链) =&gt; [借用构造函数](/JavaScript/base/OO/继承.md#借用构造函数) =&gt;  [组合继承](/JavaScript/base/OO/继承.md#组合继承) =&gt; [寄生组合式继承](/JavaScript/base/OO/继承.md#寄生组合式继承)
 
+* ES6 Class
+
 ### 其他
 
 * [正则表达式](/JavaScript/其他/regexp.md)
